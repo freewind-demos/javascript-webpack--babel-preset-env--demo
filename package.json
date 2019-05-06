@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "demo": "webpack && node bundle.js"
+    "ie11": "BROWSERS='ie 11' webpack && node dist/bundle.js",
+    "edge16": "BROWSERS='edge 16' webpack && node dist/bundle.js"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.3",
+    "@babel/preset-env": "7.4.2",
     "babel-loader": "8.0.5",
     "webpack": "4.28.1",
     "webpack-cli": "3.2.1"
